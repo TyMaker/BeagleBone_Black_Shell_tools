@@ -15,7 +15,7 @@ syst="systemctl"
 
 case "$1" in
     enable)
-        echo "enable 8080 server"
+        echo "enable 80 server"
         ${syst} enable bonescript.service
         ${syst} enable bonescript-autorun.service
         ${syst} enable bonescript.socket
@@ -23,7 +23,7 @@ case "$1" in
         echo "Done!"
         ;;
     disable)
-        echo "Disable 8080 server"
+        echo "Disable 80 server"
         ${syst} disable bonescript.service
         ${syst} disable bonescript-autorun.service
         ${syst} disable bonescript.socket
